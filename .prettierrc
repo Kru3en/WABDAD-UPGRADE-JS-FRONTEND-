@@ -2,5 +2,13 @@
   "singleQuote": true,
   "trailingComma": "all",
   "tabWidth": 2,
-  "semi": false
+  "semi": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
+  "bracketSpacing": true,
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto"
 }
