@@ -1,0 +1,511 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
+  \*************************************************************************************************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+span {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  list-style: 2rem;
+}
+
+a {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: rgb(81, 157, 255);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(81, 157, 255);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.125rem;
+  max-width: 90rem;
+  background: rgb(244, 245, 247);
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 6rem;
+}
+.header .navHeader {
+  background: rgba(255, 255, 255, 0.5);
+  max-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 208px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.0625rem solid rgb(223, 225, 230);
+}
+.header .navHeader .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7813rem;
+}
+.header .navHeader .logo .logoImg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.header .navHeader .containerNavUl {
+  margin-left: -4.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+.header .navHeader .containerNavUl .itemNavUl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navHeader .navButton {
+  display: grid;
+  place-items: center;
+  height: 2.5rem;
+  width: 5.4375rem;
+  background-color: rgb(24, 116, 255);
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease;
+}
+.header .navHeader .navButton:hover {
+  background-color: rgb(81, 157, 255);
+}
+
+.sectionStartIt {
+  height: 11.5rem;
+  background: rgb(116, 182, 255);
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
+}
+
+main .containerImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+main .containerImg .imgMain {
+  border-radius: 1rem;
+  max-width: 64rem;
+  max-height: 40.375rem;
+}
+main article {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  padding: 0rem 23.1875rem 0rem 22.9375rem;
+  margin-bottom: 4.0625rem;
+}
+main ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 23.1875rem 0rem 22.9375rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  margin-bottom: 3.75rem;
+  gap: 0.25rem;
+  list-style: disc;
+  list-style-position: inside;
+}
+main ul li {
+  padding-left: 0.8125rem;
+}
+main ul li::marker {
+  font-size: 0.625rem;
+}
+main section {
+  padding: 0rem 23.1875rem 0rem 22.9375rem;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  margin-bottom: 4.0625rem;
+}
+main .margin-88 {
+  margin-bottom: 5.625rem;
+}
+main .webDisigneText {
+  margin-bottom: 2.8125rem;
+}
+main .webDisigne {
+  padding: 0px 208px;
+  border-radius: 1rem;
+  margin-bottom: 4.0625rem;
+}
+main table {
+  margin-top: 2.1875rem;
+  border-collapse: collapse;
+}
+main th {
+  border-bottom: 0.0625rem solid #ddd;
+  padding: 0.5rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  position: relative;
+}
+main th::before {
+  content: "";
+  position: absolute;
+  left: -0.0313rem;
+  bottom: 0%;
+  height: 30%;
+  width: 0.0625rem;
+  background-color: #ddd;
+}
+main td:first-child {
+  border-left: 0.0625rem solid #ddd;
+  text-align: start;
+  padding: 0rem 0.9375rem;
+}
+main .oneTr {
+  padding-top: 1.125rem;
+}
+main .secondColum {
+  width: 8.75rem;
+}
+main .thirdColum {
+  width: 8.625rem;
+}
+main .fouColum {
+  width: 9.0625rem;
+}
+main td {
+  text-align: center;
+  padding: 0.5rem;
+  border-right: 0.0625rem solid #ddd;
+}
+main tr:last-child {
+  padding-top: -0.3125rem;
+  border-bottom: 0.0625rem solid #ddd;
+}
+main .smile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4.0625rem;
+}
+main .other {
+  display: grid;
+  place-items: center;
+  background: rgb(116, 182, 255);
+  padding: 0rem;
+}
+main .other h2 {
+  padding: 4.0625rem 0rem;
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+main .other .otherCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0rem;
+}
+main .other .otherCard .card {
+  width: 20.5rem;
+  height: 17.75rem;
+  background: rgb(255, 255, 255);
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-bottom: 1.875rem;
+  transition: 0.3s ease;
+}
+main .other .otherCard .card .cardImg {
+  width: 100%;
+  height: 190.72;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+main .other .otherCard .card p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin-top: 0.9081rem;
+  margin-left: 1.1181rem;
+}
+main .other .otherCard .card:hover {
+  box-shadow: 0 0 0.5rem rgba(23, 25, 28, 0.25);
+}
+main .subscrabe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+main .subscrabe .containerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .subscrabe .containerForm input,
+main .subscrabe .containerForm button {
+  border: none;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+}
+main .subscrabe .containerForm input {
+  padding-left: 1rem;
+  width: 14.5625rem;
+}
+main .subscrabe .containerForm input::placeholder {
+  color: rgb(180, 181, 184);
+  font-size: 18px;
+  width: 300;
+  line-height: 26px;
+  opacity: 1;
+}
+main .subscrabe .containerForm button {
+  width: 7.125rem;
+  background-color: rgb(24, 116, 255);
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+main .subscrabe .containerForm button:hover {
+  background-color: rgb(81, 157, 255);
+}
+
+footer {
+  background: rgb(32, 35, 40);
+  padding: 0px 208px;
+  color: rgb(255, 255, 255);
+}
+footer .topContainer {
+  padding-top: 4.0625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .topContainer section:first-child {
+  display: flex;
+  gap: 1.125rem;
+  flex-direction: column;
+  width: 14.375rem;
+}
+footer .topContainer section:first-child .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+footer .topContainer section:first-child .containerUl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  height: 4.25rem;
+}
+footer .topContainer section:first-child .containerUl .itemUl {
+  gap: 0.5313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .topContainer section {
+  width: 19.5rem;
+}
+footer .topContainer section .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+footer .topContainer section div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.0625rem;
+}
+footer .topContainer section div hr {
+  width: 0.0625rem;
+  height: 1.875rem;
+}
+footer .topContainer section .emailMy {
+  margin-top: 0.3375rem;
+}
+footer .topContainer section .adressCont {
+  margin-top: 2.1875rem;
+}
+footer .topContainer section .adressCont .adress {
+  font-size: 1rem;
+  width: 300;
+  line-height: 1.5rem;
+}
+footer .topContainer section:last-child {
+  width: 14.9375rem;
+}
+footer .topContainer section:last-child div {
+  display: flex;
+  gap: 1.5rem;
+}
+footer .topContainer section:last-child .registNumberCont {
+  margin-top: 1.95rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+footer .topContainer section:last-child .legal {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+footer .botContainer hr {
+  margin-top: 5.5rem;
+  margin-bottom: 1rem;
+  width: 64rem;
+  border: none;
+  height: 0.0625rem;
+  background-color: rgb(255, 255, 255);
+}
+footer .botContainer section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  width: 400;
+}
