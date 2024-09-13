@@ -364,6 +364,13 @@ body article main .smile {
   gap: 1rem;
   margin-bottom: 4.0625rem;
 }
+body article main .smile1 {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+body article main .smile1:hover {
+  transform: scale(1.2);
+}
 body article main .other {
   display: grid;
   place-items: center;
@@ -396,6 +403,7 @@ body article main .other .otherCard .slider .slide-animation .row-slider .card {
   border-radius: 1rem 1rem 1rem 1rem;
   margin-bottom: 1.875rem;
   transition: 0.3s ease;
+  box-shadow: 0.5rem 0.5rem 0.5rem -0.25rem rgba(23, 25, 28, 0.5);
 }
 body article main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
   width: 100%;
@@ -1250,7 +1258,7 @@ body article footer .botContainer section .footerSpan {
     font-size: 3rem;
   }
   body article main .other .otherCard .slider .slide-animation .row-slider {
-    padding-left: 58.125rem;
+    padding-left: 59.125rem;
   }
   body article main .other .otherCard .slider .slide-animation .row-slider .card {
     min-width: 36rem;

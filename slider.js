@@ -26,7 +26,7 @@ function showSlide(index, step) {
   }
 
   if (window.innerWidth <= 320) {
-    offset = -currentSlide * 66
+    offset = -currentSlide * 66.5
   } else {
     offset = -currentSlide * 49
   }
