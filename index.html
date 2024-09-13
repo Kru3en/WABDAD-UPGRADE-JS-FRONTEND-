@@ -47,29 +47,33 @@
             <li class="itemNavUl">Блог</li>
             <li class="itemNavUl">Лаборотория</li>
           </ul>
-          <button class="navButton">Начать</button>
+          <div class="mobileContainerNavButton">
+            <button class="navButton">Начать</button>
+            <div class="burger-icon">
+              <span></span>
+            </div>
+          </div>
         </nav>
       </header>
 
-      <section class="sectionStartIt">
-        <h1>Кем стать в ИТ сфере?</h1>
-      </section>
-
       <main>
+        <section class="sectionStartIt">
+          <h1>Кем стать в ИТ сфере?</h1>
+        </section>
         <div class="containerImg">
           <img src="./assets/img/header.png" alt="header" class="imgMain" />
         </div>
-        <article>
+        <article class="articleText">
           Вы определились с выбором своей профессии и уже твердо для себя
           решили, что хотите пойти в
-          <span>ИТ сферу</span>
+          <span class="tabSpanOff">ИТ сферу</span>
           , но у Вас остался вопрос какое именно направление выбрать? Эта статья
           поможет Вам разобраться
-          <span>какие есть</span>
+          <span class="tabSpanOff">какие есть</span>
           направления, что
-          <span>перспективнее</span>
+          <span class="tabSpanOff">перспективнее</span>
           сейчас и
-          <span>будет</span>
+          <span class="tabSpanOff">будет</span>
           в будущем. И какое направление подойдет именно Вам исходя из Ваших
           интересов.
         </article>
@@ -106,7 +110,9 @@
             <a href="https://ru.wikipedia.org/wiki/JavaScript">JS</a>
             (JavaScript) и
             <a href="https://ru.wikipedia.org/wiki/PHP">PHP</a>
-            . С помощью навыков владения языком гипертекстовой разметки HTML вы
+            .
+            <br />
+            С помощью навыков владения языком гипертекстовой разметки HTML вы
             сможете создавать основу сайта. Что касается CSS это дополнение к
             HTML, с помощью которого разработчик настраивает внешний вида сайта.
             PHP позволяет программировать взаимодействия пользователя с сайтом,
@@ -121,7 +127,7 @@
             вида и логики одним программистом).
           </p>
         </section>
-        <section>
+        <section class="Frontend">
           <h2>Frontend-разработчик</h2>
           <p>
             Одно из самых востребованных направлений в ИТ сфере.
@@ -194,7 +200,7 @@
             (си шарп).
           </p>
         </section>
-        <section>
+        <section class="MobileDev">
           <h2>Mobile-разработчик</h2>
           <p>
             Рынок мобильных приложений за последние годы вырос в несколько раз.
@@ -255,9 +261,9 @@
         <img
           src="./assets/img/webDisigne.png"
           alt="webDisigne"
-          class="webDisigne"
+          class="webDisigneImg"
         />
-        <section>
+        <section class="UX">
           <h2>UX/UI-дизайнер</h2>
           <p>
             Данный вид специалистов
@@ -293,7 +299,7 @@
             блогеров.
           </p>
         </section>
-        <section>
+        <section class="SEO">
           <h2>SEO-специалист</h2>
           <p>
             Специалисты данного направления активно
@@ -313,7 +319,7 @@
             подходящее текущим нуждам решение.
           </p>
         </section>
-        <section>
+        <section class="HR">
           <h2>HR-специалист</h2>
           <p>
             Работник в области подбора и роста специалистов в рамках компании.
@@ -326,13 +332,13 @@
           </p>
         </section>
 
-        <section>
+        <section class="preTableSection">
           Как заметно, сейчас на рынке представлено множество направлений в этой
           сфере. Выбор огромный, поэтому следует отталкиваться от своих
           интересов, возможностей и складом ума (гуманитарный и аналитически)
           это очень важно.
         </section>
-        <section>
+        <section class="tableSection">
           <h2>Средние зарплаты специалистов</h2>
 
           <table>
@@ -418,11 +424,7 @@
                 <td>2 228</td>
               </tr>
               <tr>
-                <td>
-                  Менеджер по продажам ИТ -
-               
-                  услуг
-                </td>
+                <td>Менеджер по продажам ИТ - услуг</td>
                 <td>1 750</td>
                 <td>300 / 7500</td>
                 <td>2 228</td>
@@ -449,27 +451,52 @@
         <section class="other">
           <h2>Читай также</h2>
           <section class="otherCard">
-            <div class="card">
-              <img src="./assets/img/card1.png" alt="card1" class="cardImg" />
-              <p>Как найти работу в ИТ — план действий</p>
+            <div class="slider">
+              <div class="slide-animation">
+                <div class="row-slider">
+                  <div class="card">
+                    <img
+                      src="./assets/img/card1.png"
+                      alt="card1"
+                      class="cardImg"
+                    />
+                    <p>Как найти работу в ИТ — план действий</p>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./assets/img/card2.png"
+                      alt="card2"
+                      class="cardImg"
+                    />
+                    <p>Какие навыки нужны программисту?</p>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./assets/img/card3.png"
+                      alt="card3"
+                      class="cardImg"
+                    />
+                    <p>Краткий обзор языков программирования</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card">
-              <img src="./assets/img/card2.png" alt="card2" class="cardImg" />
-              <p>Какие навыки нужны программисту?</p>
-            </div>
-            <div class="card">
-              <img src="./assets/img/card3.png" alt="card3" class="cardImg" />
-              <p>Краткий обзор языков программирования</p>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
             </div>
           </section>
         </section>
 
         <section class="subscrabe">
-          <p>
-            Подпишись, чтобы
-            <span>не пропустить</span>
-            наши новые статьи!
-          </p>
+          <div class="text-container">
+            <div class="firsts">Подпишись, чтобы</div>
+            <div>
+              <span class="subscrabeText">не пропустить</span>
+              наши новые статьи!
+            </div>
+          </div>
           <div class="containerForm">
             <input type="email" placeholder="Введи почту" />
             <button>Отправить</button>
@@ -488,48 +515,22 @@
               />
             </div>
             <ul class="containerUl">
-              <li class="itemUl">
-                Программы
-                <img
-                  src="./assets/img/footer/arrowBottomWhite.svg"
-                  class="imgNavArrow"
-                />
-              </li>
-              <li class="itemUl">Навыки</li>
-              <li class="itemUl">Блог</li>
-              <li class="itemUl">Лаборотория</li>
+              <div class="rowUl">
+                <li class="itemUl">
+                  Программы
+                  <img
+                    src="./assets/img/footer/arrowBottomWhite.svg"
+                    class="imgNavArrow"
+                  />
+                </li>
+                <li class="itemUl">Навыки</li>
+              </div>
+              <div class="rowUl">
+                <li class="itemUl">Блог</li>
+                <li class="itemUl">Лаборотория</li>
+              </div>
             </ul>
-          </section>
-          <section>
-            <div>
-              <img
-                src="./assets/img/footer/viber.png"
-                alt="viber"
-                class="icon"
-              />
-              <img
-                src="./assets/img/footer/telegram.svg"
-                alt="telegram"
-                class="icon"
-              />
-              <img
-                src="./assets/img/footer/whatsup.svg"
-                alt="whatsup"
-                class="icon"
-              />
-              <hr />
-              <p>+ 375 29 369-00-77</p>
-            </div>
-            <div class="emailMy">mentoring@webdad.by</div>
-            <div class="adressCont">
-              <p class="adress">
-                224016, Республика Беларусь, г. Брест, ул. Куйбышева, д.9,
-                оф.217
-              </p>
-            </div>
-          </section>
-          <section>
-            <div>
+            <div class="tabFooter">
               <img
                 src="./assets/img/footer/insta.svg"
                 alt="insta"
@@ -543,24 +544,78 @@
               />
               <img src="./assets/img/footer/be.svg" alt="be" class="icon" />
             </div>
-            <div class="registNumberCont">
-              <p>Свидетельство о гос. регистрации № 291667035 от 26.10.2020</p>
-            </div>
-            <div class="legal">
-              <p>Политика конфиденциальности</p>
-              <p>Пользовательское соглашение</p>
-            </div>
           </section>
+          <div class="tabContainer">
+            <section>
+              <div class="freeIcon">
+                <div>
+                  <img
+                    src="./assets/img/footer/viber.png"
+                    alt="viber"
+                    class="icon"
+                  />
+                  <img
+                    src="./assets/img/footer/telegram.svg"
+                    alt="telegram"
+                    class="icon"
+                  />
+                  <img
+                    src="./assets/img/footer/whatsup.svg"
+                    alt="whatsup"
+                    class="icon"
+                  />
+                </div>
+                <hr class="freeIconHr" />
+                <p>+ 375 29 369-00-77</p>
+              </div>
+              <div class="emailMy">mentoring@webdad.by</div>
+              <div class="adressCont">
+                <p class="adress">
+                  224016, Республика Беларусь, г. Брест, ул. Куйбышева, д.9,
+                  оф.217
+                </p>
+              </div>
+            </section>
+            <section>
+              <div class="desckFooter">
+                <img
+                  src="./assets/img/footer/insta.svg"
+                  alt="insta"
+                  class="icon"
+                />
+                <img src="./assets/img/footer/in.svg" alt="in" class="icon" />
+                <img
+                  src="./assets/img/footer/globus.svg"
+                  alt="globus"
+                  class="icon"
+                />
+                <img src="./assets/img/footer/be.svg" alt="be" class="icon" />
+              </div>
+              <div class="registNumberCont">
+                <p>
+                  Свидетельство о гос. регистрации № 291667035 от 26.10.2020
+                </p>
+              </div>
+              <div class="legal">
+                <p>Политика конфиденциальности</p>
+                <p>Пользовательское соглашение</p>
+              </div>
+            </section>
+          </div>
         </div>
         <div class="botContainer">
           <hr />
           <section>
             <p>© Webdad Upgrade 2021</p>
-            <p>Сайт сделан и обслуживается студентами Webdad Upgrade</p>
+            <p>
+              Сайт сделан и обслуживается
+              <span class="footerSpan">студентами Webdad Upgrade</span>
+            </p>
           </section>
         </div>
       </footer>
     </article>
+    <script src="./slider.js"></script>
     <script src="dist/bundle.js"></script>
   </body>
 </html>

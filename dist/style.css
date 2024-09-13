@@ -154,44 +154,59 @@ body {
   background: rgb(244, 245, 247);
   margin: 0 auto;
 }
-
-.header {
-  margin-bottom: 6rem;
+body article {
+  max-width: 90rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.header .navHeader {
+body article .header {
+  margin-bottom: 6rem;
+  padding: 0px;
+}
+body article .header .navHeader {
   background: rgba(255, 255, 255, 0.5);
   max-height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 208px;
+  width: 100%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-bottom: 0.0625rem solid rgb(223, 225, 230);
+  padding-left: 208px;
+  padding-right: 207px;
 }
-.header .navHeader .logo {
+body article .header .navHeader .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.7813rem;
 }
-.header .navHeader .logo .logoImg {
+body article .header .navHeader .logo .logoImg {
   width: 2.5rem;
   height: 2.5rem;
 }
-.header .navHeader .containerNavUl {
-  margin-left: -4.375rem;
+body article .header .navHeader .logo .logoText {
+  width: 112.5px;
+  height: 17.5px;
+}
+body article .header .navHeader .logo .burger-icon {
+  display: none;
+}
+body article .header .navHeader .containerNavUl {
+  margin-right: 4.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.75rem;
 }
-.header .navHeader .containerNavUl .itemNavUl {
+body article .header .navHeader .containerNavUl .itemNavUl {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header .navHeader .navButton {
+body article .header .navHeader .navButton {
   display: grid;
   place-items: center;
   height: 2.5rem;
@@ -200,78 +215,97 @@ body {
   border-radius: 0.5rem;
   color: rgb(255, 255, 255);
   transition: 0.3s ease;
+  font-size: 1.125rem;
+  width: 300;
+  line-height: 1.625rem;
 }
-.header .navHeader .navButton:hover {
+body article .header .navHeader .navButton:hover {
   background-color: rgb(81, 157, 255);
 }
-
-.sectionStartIt {
+body article main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body article main .sectionStartIt {
   height: 11.5rem;
   background: rgb(116, 182, 255);
   display: grid;
   place-items: center;
   margin-bottom: 3rem;
+  max-width: 90rem;
+  width: 100%;
 }
-
-main .containerImg {
+body article main .containerImg {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem;
 }
-main .containerImg .imgMain {
+body article main .containerImg .imgMain {
   border-radius: 1rem;
   max-width: 64rem;
   max-height: 40.375rem;
+  width: 100%;
 }
-main article {
+body article main .articleText {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.875rem;
-  padding: 0rem 23.1875rem 0rem 22.9375rem;
+  padding: 0rem 163px 0rem 159px;
   margin-bottom: 4.0625rem;
+  display: block;
+  max-width: 64rem;
 }
-main ul {
+body article main ul {
   display: flex;
   flex-direction: column;
-  padding: 0rem 23.1875rem 0rem 22.9375rem;
+  justify-content: start;
+  max-width: 64rem;
+  width: 100%;
+  padding: 0rem 163px 0rem 159px;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.875rem;
-  margin-bottom: 3.75rem;
-  gap: 0.25rem;
+  margin-bottom: 4.2rem;
+  gap: 0.3rem;
   list-style: disc;
   list-style-position: inside;
 }
-main ul li {
+body article main ul li {
   padding-left: 0.8125rem;
 }
-main ul li::marker {
+body article main ul li::marker {
   font-size: 0.625rem;
 }
-main section {
-  padding: 0rem 23.1875rem 0rem 22.9375rem;
+body article main section {
+  padding: 0rem 163px 0rem 159px;
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.875rem;
   margin-bottom: 4.0625rem;
+  max-width: 64rem;
+  width: 100%;
 }
-main .margin-88 {
+body article main .margin-88 {
   margin-bottom: 5.625rem;
 }
-main .webDisigneText {
+body article main .webDisigneText {
   margin-bottom: 2.8125rem;
 }
-main .webDisigne {
-  padding: 0px 208px;
+body article main .webDisigneImg {
+  max-width: 64rem;
+  max-height: 642px;
+  padding: 0 12px;
+  width: 100%;
   border-radius: 1rem;
-  margin-bottom: 4.0625rem;
+  margin-bottom: 4.6rem;
 }
-main table {
+body article main table {
   margin-top: 2.1875rem;
   border-collapse: collapse;
 }
-main th {
+body article main th {
   border-bottom: 0.0625rem solid #ddd;
   padding: 0.5rem;
   font-weight: 400;
@@ -279,7 +313,7 @@ main th {
   line-height: 1.875rem;
   position: relative;
 }
-main th::before {
+body article main th::before {
   content: "";
   position: absolute;
   left: -0.0313rem;
@@ -288,60 +322,74 @@ main th::before {
   width: 0.0625rem;
   background-color: #ddd;
 }
-main td:first-child {
+body article main th:last-child::after {
+  content: "";
+  position: absolute;
+  right: -0.0313rem;
+  bottom: 0%;
+  height: 30%;
+  width: 0.0625rem;
+  background-color: #ddd;
+}
+body article main td:first-child {
   border-left: 0.0625rem solid #ddd;
   text-align: start;
   padding: 0rem 0.9375rem;
 }
-main .oneTr {
+body article main .oneTr {
   padding-top: 1.125rem;
 }
-main .secondColum {
+body article main .secondColum {
   width: 8.75rem;
 }
-main .thirdColum {
+body article main .thirdColum {
   width: 8.625rem;
 }
-main .fouColum {
+body article main .fouColum {
   width: 9.0625rem;
 }
-main td {
+body article main td {
   text-align: center;
   padding: 0.5rem;
   border-right: 0.0625rem solid #ddd;
 }
-main tr:last-child {
+body article main tr:last-child {
   padding-top: -0.3125rem;
   border-bottom: 0.0625rem solid #ddd;
 }
-main .smile {
+body article main .smile {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   margin-bottom: 4.0625rem;
 }
-main .other {
+body article main .other {
   display: grid;
   place-items: center;
   background: rgb(116, 182, 255);
-  padding: 0rem;
+  padding: 0px;
+  max-width: 90rem;
+  width: 100%;
 }
-main .other h2 {
+body article main .other h2 {
   padding: 4.0625rem 0rem;
   padding-bottom: 2.5rem;
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.5rem;
 }
-main .other .otherCard {
+body article main .other .otherCard {
+  padding: 0rem;
+  width: 100%;
+}
+body article main .other .otherCard .slider .slide-animation .row-slider {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  padding: 0rem;
 }
-main .other .otherCard .card {
+body article main .other .otherCard .slider .slide-animation .row-slider .card {
   width: 20.5rem;
   height: 17.75rem;
   background: rgb(255, 255, 255);
@@ -349,84 +397,93 @@ main .other .otherCard .card {
   margin-bottom: 1.875rem;
   transition: 0.3s ease;
 }
-main .other .otherCard .card .cardImg {
+body article main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
   width: 100%;
   height: 190.72;
   border-radius: 1rem 1rem 0rem 0rem;
 }
-main .other .otherCard .card p {
+body article main .other .otherCard .slider .slide-animation .row-slider .card p {
+  padding-right: 5rem;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.625rem;
   margin-top: 0.9081rem;
   margin-left: 1.1181rem;
 }
-main .other .otherCard .card:hover {
+body article main .other .otherCard .slider .slide-animation .row-slider .card:hover {
   box-shadow: 0 0 0.5rem rgba(23, 25, 28, 0.25);
 }
-main .subscrabe {
+body article main .other .otherCard .slider .slide-animation .dots {
+  display: none;
+}
+body article main .subscrabe {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3.5rem;
+  margin-bottom: 32px;
 }
-main .subscrabe .containerForm {
+body article main .subscrabe .containerForm {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-main .subscrabe .containerForm input,
-main .subscrabe .containerForm button {
+body article main .subscrabe .containerForm input,
+body article main .subscrabe .containerForm button {
   border: none;
   border-radius: 0.5rem;
   height: 2.5rem;
 }
-main .subscrabe .containerForm input {
+body article main .subscrabe .containerForm input {
   padding-left: 1rem;
   width: 14.5625rem;
 }
-main .subscrabe .containerForm input::placeholder {
+body article main .subscrabe .containerForm input::placeholder {
   color: rgb(180, 181, 184);
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 300;
-  line-height: 26px;
+  line-height: 1.625rem;
   opacity: 1;
 }
-main .subscrabe .containerForm button {
+body article main .subscrabe .containerForm button {
   width: 7.125rem;
   background-color: rgb(24, 116, 255);
   color: rgb(255, 255, 255);
   transition: 0.3s ease;
   font-size: 1rem;
 }
-main .subscrabe .containerForm button:hover {
+body article main .subscrabe .containerForm button:hover {
   background-color: rgb(81, 157, 255);
 }
-
-footer {
+body article footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: rgb(32, 35, 40);
-  padding: 0px 208px;
   color: rgb(255, 255, 255);
+  width: 100%;
 }
-footer .topContainer {
+body article footer .topContainer {
   padding-top: 4.0625rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 7.3125rem;
 }
-footer .topContainer section:first-child {
+body article footer .topContainer section:first-child {
   display: flex;
   gap: 1.125rem;
   flex-direction: column;
   width: 14.375rem;
 }
-footer .topContainer section:first-child .logo {
+body article footer .topContainer section:first-child .logo {
   display: flex;
   align-items: center;
   gap: 0.625rem;
 }
-footer .topContainer section:first-child .containerUl {
+body article footer .topContainer section:first-child .containerUl {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -437,54 +494,66 @@ footer .topContainer section:first-child .containerUl {
   line-height: 1.625rem;
   height: 4.25rem;
 }
-footer .topContainer section:first-child .containerUl .itemUl {
+body article footer .topContainer section:first-child .containerUl .rowUl {
+  display: flex;
+  gap: 32px;
+}
+body article footer .topContainer section:first-child .containerUl .rowUl .itemUl {
   gap: 0.5313rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer .topContainer section {
+body article footer .topContainer section:first-child .tabFooter {
+  display: none;
+}
+body article footer .topContainer .tabContainer {
+  justify-content: space-between;
+  display: flex;
+  gap: 7.3125rem;
+}
+body article footer .topContainer .tabContainer section {
   width: 19.5rem;
 }
-footer .topContainer section .icon {
+body article footer .topContainer .tabContainer section .icon {
   width: 1.5rem;
   height: 1.5rem;
 }
-footer .topContainer section div {
+body article footer .topContainer .tabContainer section div {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 1.0625rem;
 }
-footer .topContainer section div hr {
+body article footer .topContainer .tabContainer section div hr {
   width: 0.0625rem;
   height: 1.875rem;
 }
-footer .topContainer section .emailMy {
+body article footer .topContainer .tabContainer section .emailMy {
   margin-top: 0.3375rem;
 }
-footer .topContainer section .adressCont {
-  margin-top: 2.1875rem;
+body article footer .topContainer .tabContainer section .adressCont {
+  margin-top: 1rem;
 }
-footer .topContainer section .adressCont .adress {
+body article footer .topContainer .tabContainer section .adressCont .adress {
   font-size: 1rem;
   width: 300;
   line-height: 1.5rem;
 }
-footer .topContainer section:last-child {
+body article footer .topContainer .tabContainer section:last-child {
   width: 14.9375rem;
 }
-footer .topContainer section:last-child div {
+body article footer .topContainer .tabContainer section:last-child div {
   display: flex;
   gap: 1.5rem;
 }
-footer .topContainer section:last-child .registNumberCont {
+body article footer .topContainer .tabContainer section:last-child .registNumberCont {
   margin-top: 1.95rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.375rem;
 }
-footer .topContainer section:last-child .legal {
+body article footer .topContainer .tabContainer section:last-child .legal {
   margin-top: 0.6rem;
   display: flex;
   flex-direction: column;
@@ -494,18 +563,712 @@ footer .topContainer section:last-child .legal {
   font-weight: 400;
   line-height: 1.375rem;
 }
-footer .botContainer hr {
-  margin-top: 5.5rem;
+body article footer .botContainer {
+  max-width: 64rem;
+  width: 100%;
+}
+body article footer .botContainer hr {
+  margin-top: 4.6rem;
   margin-bottom: 1rem;
-  width: 64rem;
+  max-width: 64rem;
+  width: 100%;
   border: none;
   height: 0.0625rem;
   background-color: rgb(255, 255, 255);
 }
-footer .botContainer section {
+body article footer .botContainer section {
   display: flex;
   justify-content: space-between;
   font-size: 0.875rem;
   line-height: 1.375rem;
   width: 400;
+}
+body article footer .botContainer section .footerSpan {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  body article .header .navHeader {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .otherCard .slider .slide-animation .row-slider {
+    flex-wrap: wrap;
+  }
+  body article footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body article footer .topContainer {
+    gap: 10%;
+  }
+  body article footer .topContainer .tabContainer {
+    gap: 10%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  body article .header {
+    height: 5.3333rem;
+  }
+  body article .header .navHeader {
+    padding: 0rem 1.5rem;
+    min-height: 5.3333rem;
+  }
+  body article .header .navHeader .logo .logoImg {
+    width: 3.3333rem;
+    height: 3.3333rem;
+  }
+  body article .header .navHeader .containerNavUl {
+    position: fixed;
+    right: -100%;
+  }
+  body article .header .navHeader .mobileContainerNavButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.25rem;
+    gap: 4.2rem;
+  }
+  body article .header .navHeader .mobileContainerNavButton .navButton {
+    height: 3.3333rem;
+    width: 7.25rem;
+    font-size: 1.1667rem;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span,
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span:after,
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
+    transition-duration: 0.35s;
+    content: "";
+    width: 2.4rem;
+    height: 0.2rem;
+    position: absolute;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background: transparent;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span:after {
+    top: 1rem;
+    background: rgb(23, 25, 28);
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
+    bottom: 1rem;
+    background: rgb(23, 25, 28);
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span {
+    height: 0.2rem;
+    background: rgb(23, 25, 28);
+  }
+  body article main .sectionStartIt {
+    padding: 0rem;
+    margin-bottom: 2.6667rem;
+  }
+  body article main .sectionStartIt h1 {
+    font-size: 2.6rem;
+  }
+  body article main .containerImg {
+    padding: 0rem;
+    height: 37.3333rem;
+    max-width: 60rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  body article main .containerImg .imgMain {
+    height: 448;
+    max-width: 60rem;
+    width: 100%;
+  }
+  body article main .articleText {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 0rem 2rem;
+  }
+  body article main .articleText .tabSpanOff {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  body article main ul,
+  body article main section {
+    padding: 0rem 2rem;
+    margin-bottom: 4rem;
+  }
+  body article main ul {
+    gap: 0.41rem;
+  }
+  body article main ul h2 {
+    margin-bottom: 1.5rem;
+  }
+  body article main ul li {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  body article main ul li::marker {
+    font-size: 0.8333rem;
+  }
+  body article main .Frontend {
+    padding-right: 2.5rem;
+  }
+  body article main h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.6667rem;
+    margin-bottom: 2rem;
+  }
+  body article main span {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  body article main p,
+  body article main a,
+  body article main section {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  body article main .webDisigneText {
+    margin-bottom: 4rem;
+  }
+  body article main .webDisigneImg {
+    max-width: 63rem;
+    width: 100%;
+    max-height: 37.8333rem;
+  }
+  body article main .tableSection {
+    margin-bottom: 119.6256px;
+  }
+  body article main .smile {
+    display: none;
+  }
+  body article main .SEO {
+    padding-right: 2.5rem;
+  }
+  body article main .HR {
+    margin-bottom: 5.3333rem;
+  }
+  body article main .preTableSection {
+    margin-bottom: 5.3333rem;
+  }
+  body article main .tableSection {
+    margin-bottom: 13.75rem;
+  }
+  body article main .tableSection h2 {
+    margin-bottom: 3.3333rem;
+  }
+  body article main .tableSection table thead tr .thirdColum {
+    width: 12.2083rem;
+  }
+  body article main .tableSection table thead tr .fouColum {
+    width: 13.5rem;
+  }
+  body article main .tableSection table thead tr th {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  body article main .tableSection table tbody {
+    height: 57.0833rem;
+  }
+  body article main .other {
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+  body article main .other h2 {
+    padding-top: 5.6667rem;
+    margin-bottom: 1.6667rem;
+  }
+  body article main .other .otherCard {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    overflow: hidden;
+    margin: auto;
+    max-width: 100%;
+  }
+  body article main .other .otherCard .slider .slide-animation {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 49.8%;
+    gap: 27.75px;
+    width: 100%;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider .card {
+    min-width: 28.5rem;
+    min-height: 25.1667rem;
+    border-radius: 1.5rem;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
+    width: 28.5rem;
+    height: 16.6667rem;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider .card p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.1667rem;
+  }
+  body article main .other .otherCard .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.625rem;
+    margin-bottom: 4.6667rem;
+  }
+  body article main .other .otherCard .dots .dot {
+    display: inline-block;
+    width: 0.625rem;
+    height: 0.625rem;
+    margin: 0.3125rem;
+    background-color: #bbb;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+  }
+  body article main .other .otherCard .dots .dot.active {
+    background-color: #007bff;
+    width: 1.6667rem;
+  }
+  body article main .subscrabe {
+    margin-bottom: 3.6667rem;
+    justify-content: space-between;
+  }
+  body article main .subscrabe .containerForm input {
+    width: 19.4167rem;
+    height: 3.3333rem;
+  }
+  body article main .subscrabe .containerForm button {
+    width: 9.5rem;
+    height: 3.3333rem;
+  }
+  body article footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  body article footer .topContainer {
+    padding-top: 4rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body article footer .topContainer section:first-child {
+    gap: 1.5rem;
+  }
+  body article footer .topContainer section:first-child .containerUl {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.4rem;
+  }
+  body article footer .topContainer section:first-child .containerUl .rowUl .itemUl {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.1667rem;
+  }
+  body article footer .topContainer section:first-child .tabFooter {
+    margin-top: 2.0833rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+  body article footer .topContainer .tabContainer {
+    flex-direction: column;
+    gap: 3.6875rem;
+    width: 28.5rem;
+  }
+  body article footer .topContainer .tabContainer section {
+    width: 100%;
+    gap: 1rem;
+  }
+  body article footer .topContainer .tabContainer section .freeIcon {
+    width: 100%;
+  }
+  body article footer .topContainer .tabContainer section .freeIcon div .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  body article footer .topContainer .tabContainer section .emailMy {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    line-height: 2.1667rem;
+    font-weight: 500;
+  }
+  body article footer .topContainer .tabContainer section .adressCont {
+    margin-top: 0rem;
+    width: 100%;
+  }
+  body article footer .topContainer .tabContainer section .adressCont .adress {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.3333rem;
+    line-height: 2rem;
+  }
+  body article footer .topContainer .tabContainer section:last-child {
+    width: 100%;
+  }
+  body article footer .topContainer .tabContainer section:last-child .desckFooter {
+    display: none;
+  }
+  body article footer .topContainer .tabContainer section:last-child .registNumberCont,
+  body article footer .topContainer .tabContainer section:last-child .legal {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.1667rem;
+    line-height: 1.8333rem;
+  }
+  body article footer .botContainer hr {
+    margin-top: 2rem;
+  }
+  body article footer .botContainer section p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3333rem;
+  }
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+  body article .header {
+    margin-bottom: 11rem;
+    min-height: 8rem;
+  }
+  body article .header .navHeader {
+    min-height: 8rem;
+    gap: 11.875rem;
+  }
+  body article .header .navHeader .logo {
+    width: 20.625rem;
+    height: 5rem;
+    gap: 1.5625rem;
+  }
+  body article .header .navHeader .logo .logoImg {
+    width: 5rem;
+    height: 5rem;
+  }
+  body article .header .navHeader .mobileContainerNavButton .navButton {
+    display: none;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span {
+    width: 3rem;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span::after {
+    width: 3rem;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
+    width: 3rem;
+  }
+  body article main .sectionStartIt {
+    height: 20rem;
+    margin-bottom: 4rem;
+  }
+  body article main .sectionStartIt h1 {
+    font-size: 4rem;
+    text-align: center;
+    width: 500;
+  }
+  body article main .containerImg {
+    height: 22.75rem;
+    margin-bottom: 3rem;
+    padding: 0 1.5rem;
+  }
+  body article main .containerImg .imgMain {
+    height: 22.75rem;
+  }
+  body article main .articleText {
+    margin-bottom: 6rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0rem 2rem;
+  }
+  body article main .articleText .tabSpanOff {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  body article main h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+  }
+  body article main ul {
+    margin-bottom: 4.75rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0rem 2rem;
+    gap: 0.375rem;
+  }
+  body article main ul h2 {
+    margin-bottom: 2.5rem;
+  }
+  body article main ul li {
+    font-weight: 350;
+    font-size: 2.375rem;
+    line-height: 4rem;
+  }
+  body article main ul li::marker {
+    font-size: 1.25rem;
+  }
+  body article main section {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0rem 2.125rem;
+    margin-bottom: 6rem;
+  }
+  body article main section h2 {
+    margin-bottom: 3rem;
+  }
+  body article main .MobileDev {
+    padding: 0rem 2rem;
+  }
+  body article main .margin-60,
+  body article main .HR {
+    margin-bottom: 3rem;
+  }
+  body article main .margin-88,
+  body article main .webDisigneText,
+  body article main .webDisigneImg {
+    margin-bottom: 6rem;
+  }
+  body article main .webDisigneImg {
+    max-height: 22.75rem;
+  }
+  body article main .UX {
+    padding-right: 4.25rem;
+  }
+  body article main span {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  body article main p,
+  body article main a {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  body article main .Frontend {
+    padding-right: 1.5rem;
+  }
+  body article main .preTableSection {
+    margin-bottom: 6rem;
+  }
+  body article main .tableSection {
+    margin-bottom: 5.75rem;
+    max-width: 40rem;
+    width: 100%;
+  }
+  body article main .tableSection table {
+    max-width: 35rem;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  body article main .tableSection table .secondColum,
+  body article main .tableSection table .thirdColum,
+  body article main .tableSection table .fouColum {
+    max-width: 8rem;
+  }
+  body article main .tableSection table .oneColum,
+  body article main .tableSection table .secondColum,
+  body article main .tableSection table .thirdColum,
+  body article main .tableSection table .fouColum {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  body article main .smile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+  }
+  body article main .other {
+    margin-bottom: 8rem;
+  }
+  body article main .other h2 {
+    font-size: 3rem;
+  }
+  body article main .subscrabe {
+    margin-bottom: 8rem;
+    flex-direction: column;
+  }
+  body article main .subscrabe .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: start;
+    padding-right: 5rem;
+  }
+  body article main .subscrabe .containerForm {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+  body article main .subscrabe .containerForm input {
+    width: 36rem;
+    height: 5rem;
+  }
+  body article main .subscrabe .containerForm input::placeholder {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+    font-weight: 300;
+  }
+  body article main .subscrabe .containerForm button {
+    width: 13.875rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+  }
+  body article footer {
+    padding: 0rem 2rem;
+  }
+  body article footer .topContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  body article footer .topContainer section:first-child .tabFooter {
+    display: none;
+  }
+  body article footer .topContainer section:first-child .containerUl {
+    gap: 2rem;
+  }
+  body article footer .topContainer section:first-child .containerUl .rowUl {
+    display: flex;
+    gap: 4rem;
+  }
+  body article footer .topContainer section:first-child .containerUl .rowUl li {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+  body article footer .topContainer .tabContainer {
+    gap: 2rem;
+  }
+  body article footer .topContainer .tabContainer .freeIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body article footer .topContainer .tabContainer .freeIcon div .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  body article footer .topContainer .tabContainer .freeIcon p {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+  body article footer .topContainer .tabContainer .freeIcon .freeIconHr {
+    display: none;
+  }
+  body article footer .topContainer .tabContainer .emailMy {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+  body article footer .topContainer .tabContainer section .adressCont .adress {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  body article footer .topContainer .tabContainer section:last-child {
+    width: 100%;
+  }
+  body article footer .topContainer .tabContainer section:last-child .desckFooter {
+    display: flex;
+  }
+  body article footer .topContainer .tabContainer section:last-child .desckFooter .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  body article footer .topContainer .tabContainer section:last-child .registNumberCont {
+    margin-top: 6rem;
+    width: 100%;
+  }
+  body article footer .topContainer .tabContainer section:last-child .registNumberCont p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  body article footer .topContainer .tabContainer section:last-child .legal p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  body article footer .botContainer {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+  }
+  body article footer .botContainer section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body article footer .botContainer section p {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+  }
+  body article footer .botContainer section .footerSpan {
+    display: block;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+  }
+}
+@media (max-width: 320px) {
+  body article main .other h2 {
+    font-size: 3rem;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider {
+    padding-left: 58.125rem;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider .card {
+    min-width: 36rem;
+    width: 100%;
+    min-height: 31.75rem;
+    border-radius: 2.25rem;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
+    min-width: 36rem;
+    width: 100%;
+    height: 21.0263rem;
+  }
+  body article main .other .otherCard .slider .slide-animation .row-slider .card p {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+  body article main .other .otherCard .dots {
+    margin-bottom: 8rem;
+  }
 }
