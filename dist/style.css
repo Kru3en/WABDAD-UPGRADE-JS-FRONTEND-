@@ -163,18 +163,16 @@ body {
   max-width: 90rem;
   background: rgb(244, 245, 247);
   margin: 0 auto;
-}
-body article {
   max-width: 90rem;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-body article .header {
+body .header {
   margin-bottom: 6rem;
   padding: 0px;
 }
-body article .header .navHeader {
+body .header .navHeader {
   background: rgba(255, 255, 255, 0.5);
   max-height: 4rem;
   display: flex;
@@ -187,49 +185,49 @@ body article .header .navHeader {
   padding-left: 208px;
   padding-right: 207px;
 }
-body article .header .navHeader .logo {
+body .header .navHeader .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.7813rem;
 }
-body article .header .navHeader .logo .logoImg {
+body .header .navHeader .logo .logoImg {
   width: 2.5rem;
   height: 2.5rem;
 }
-body article .header .navHeader .logo .logoText {
+body .header .navHeader .logo .logoText {
   width: 112.5px;
   height: 17.5px;
 }
-body article .header .navHeader .logo .burger-icon {
+body .header .navHeader .logo .burger-icon {
   display: none;
 }
-body article .header .navHeader .containerNavUl {
+body .header .navHeader .containerNavUl {
   margin-right: 4.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.75rem;
 }
-body article .header .navHeader .containerNavUl .itemNavUl {
+body .header .navHeader .containerNavUl .itemNavUl {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body article .header .navHeader .containerNavUl .itemNavUl a {
+body .header .navHeader .containerNavUl .itemNavUl a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: rgb(23, 25, 28);
 }
-body article .header .navHeader .containerNavUl .itemNavUl a:hover {
+body .header .navHeader .containerNavUl .itemNavUl a:hover {
   color: rgb(81, 157, 255);
 }
-body article .header .navHeader .containerNavUl .itemNavUl .imgNavArrow {
+body .header .navHeader .containerNavUl .itemNavUl .imgNavArrow {
   width: 24px;
   height: 24px;
 }
-body article .header .navHeader .navButton {
+body .header .navHeader .navButton {
   display: grid;
   place-items: center;
   height: 2.5rem;
@@ -243,15 +241,15 @@ body article .header .navHeader .navButton {
   line-height: 1.625rem;
   cursor: pointer;
 }
-body article .header .navHeader .navButton:hover {
+body .header .navHeader .navButton:hover {
   background-color: rgb(81, 157, 255);
 }
-body article main {
+body main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body article main .sectionStartIt {
+body main .sectionStartIt {
   height: 11.5rem;
   background: rgb(116, 182, 255);
   display: grid;
@@ -260,19 +258,21 @@ body article main .sectionStartIt {
   max-width: 90rem;
   width: 100%;
 }
-body article main .containerImg {
+body main .containerImg {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem;
 }
-body article main .containerImg .imgMain {
+body main .containerImg .imgMain {
   border-radius: 1rem;
   max-width: 64rem;
   max-height: 40.375rem;
   width: 100%;
+  height: 100%;
+  padding: 0px 12px;
 }
-body article main .articleText {
+body main .articleText {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.875rem;
@@ -281,13 +281,13 @@ body article main .articleText {
   display: block;
   max-width: 64rem;
 }
-body article main .ulH2 {
+body main .ulH2 {
   padding-left: 159px;
   max-width: 1024px;
   text-align: left;
   width: 100%;
 }
-body article main ul {
+body main ul {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -302,13 +302,13 @@ body article main ul {
   list-style: disc;
   list-style-position: inside;
 }
-body article main ul li {
+body main ul li {
   padding-left: 0.8125rem;
 }
-body article main ul li::marker {
+body main ul li::marker {
   font-size: 0.625rem;
 }
-body article main section {
+body main section {
   padding: 0rem 163px 0rem 159px;
   font-weight: 300;
   font-size: 1.125rem;
@@ -317,25 +317,26 @@ body article main section {
   max-width: 64rem;
   width: 100%;
 }
-body article main .margin-88 {
+body main .margin-88 {
   margin-bottom: 5.625rem;
 }
-body article main .webDisigneText {
+body main .webDisigneText {
   margin-bottom: 2.8125rem;
 }
-body article main .webDisigneImg {
+body main .webDisigneImg {
   max-width: 64rem;
-  max-height: 642px;
+  max-height: 40.125rem;
   padding: 0 12px;
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   margin-bottom: 4.6rem;
 }
-body article main table {
+body main table {
   margin-top: 2.1875rem;
   border-collapse: collapse;
 }
-body article main th {
+body main th {
   border-bottom: 0.0625rem solid #ddd;
   padding: 0.5rem;
   font-weight: 400;
@@ -343,7 +344,7 @@ body article main th {
   line-height: 1.875rem;
   position: relative;
 }
-body article main th::before {
+body main th::before {
   content: "";
   position: absolute;
   left: -0.0313rem;
@@ -352,7 +353,7 @@ body article main th::before {
   width: 0.0625rem;
   background-color: #ddd;
 }
-body article main th:last-child::after {
+body main th:last-child::after {
   content: "";
   position: absolute;
   right: -0.0313rem;
@@ -361,49 +362,49 @@ body article main th:last-child::after {
   width: 0.0625rem;
   background-color: #ddd;
 }
-body article main td:first-child {
+body main td:first-child {
   border-left: 0.0625rem solid #ddd;
   text-align: start;
   padding: 0rem 0.9375rem;
 }
-body article main .oneTr {
+body main .oneTr {
   padding-top: 1.125rem;
 }
-body article main .secondColum {
+body main .secondColum {
   width: 8.75rem;
 }
-body article main .thirdColum {
+body main .thirdColum {
   width: 8.625rem;
 }
-body article main .fouColum {
+body main .fouColum {
   width: 9.0625rem;
 }
-body article main td {
+body main td {
   text-align: center;
   padding: 0.5rem;
   border-right: 0.0625rem solid #ddd;
 }
-body article main tr:last-child {
+body main tr:last-child {
   padding-top: -0.3125rem;
   border-bottom: 0.0625rem solid #ddd;
 }
-body article main .smile {
+body main .smile {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   margin-bottom: 4.0625rem;
 }
-body article main .smile1 {
+body main .smile1 {
   transition: transform 0.3s ease;
   cursor: pointer;
   width: 47.49px;
   height: 47.49px;
 }
-body article main .smile1:hover {
+body main .smile1:hover {
   transform: scale(1.2);
 }
-body article main .other {
+body main .other {
   display: grid;
   place-items: center;
   background: rgb(116, 182, 255);
@@ -411,24 +412,24 @@ body article main .other {
   max-width: 90rem;
   width: 100%;
 }
-body article main .other h2 {
+body main .other h2 {
   padding: 4.0625rem 0rem;
   padding-bottom: 2.5rem;
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.5rem;
 }
-body article main .other .otherCard {
+body main .other .otherCard {
   padding: 0rem;
   width: 100%;
 }
-body article main .other .otherCard .slider .slide-animation .row-slider {
+body main .other .otherCard .slider .slide-animation .row-slider {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
 }
-body article main .other .otherCard .slider .slide-animation .row-slider .card {
+body main .other .otherCard .slider .slide-animation .row-slider .card {
   width: 20.5rem;
   height: 17.75rem;
   background: rgb(255, 255, 255);
@@ -438,12 +439,12 @@ body article main .other .otherCard .slider .slide-animation .row-slider .card {
   box-shadow: 0.5rem 0.5rem 0.5rem -0.25rem rgba(23, 25, 28, 0.5);
   color: rgb(23, 25, 28);
 }
-body article main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
+body main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
   width: 100%;
-  height: 190.72;
+  height: 11.92rem;
   border-radius: 1rem 1rem 0rem 0rem;
 }
-body article main .other .otherCard .slider .slide-animation .row-slider .card p {
+body main .other .otherCard .slider .slide-animation .row-slider .card p {
   padding-right: 5rem;
   font-weight: 500;
   font-size: 1.125rem;
@@ -451,53 +452,53 @@ body article main .other .otherCard .slider .slide-animation .row-slider .card p
   margin-top: 0.9081rem;
   margin-left: 1.1181rem;
 }
-body article main .other .otherCard .slider .slide-animation .row-slider .card:hover {
+body main .other .otherCard .slider .slide-animation .row-slider .card:hover {
   box-shadow: 0 0 0.5rem rgba(23, 25, 28, 0.25);
 }
-body article main .other .otherCard .slider .slide-animation .dots {
+body main .other .otherCard .slider .slide-animation .dots {
   display: none;
 }
-body article main .subscrabe {
+body main .subscrabe {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3.5rem;
   margin-bottom: 32px;
 }
-body article main .subscrabe .containerForm {
+body main .subscrabe .containerForm {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-body article main .subscrabe .containerForm input,
-body article main .subscrabe .containerForm button {
+body main .subscrabe .containerForm input,
+body main .subscrabe .containerForm button {
   border: none;
   border-radius: 0.5rem;
   height: 2.5rem;
 }
-body article main .subscrabe .containerForm input {
+body main .subscrabe .containerForm input {
   padding-left: 1rem;
   width: 14.5625rem;
 }
-body article main .subscrabe .containerForm input::placeholder {
+body main .subscrabe .containerForm input::placeholder {
   color: rgb(180, 181, 184);
   font-size: 1.125rem;
   width: 300;
   line-height: 1.625rem;
   opacity: 1;
 }
-body article main .subscrabe .containerForm button {
+body main .subscrabe .containerForm button {
   width: 7.125rem;
   background-color: rgb(24, 116, 255);
   color: rgb(255, 255, 255);
   transition: 0.3s ease;
   font-size: 1rem;
 }
-body article main .subscrabe .containerForm button:hover {
+body main .subscrabe .containerForm button:hover {
   background-color: rgb(81, 157, 255);
 }
-body article footer {
+body footer {
   background-color: rgb(32, 35, 40);
   padding-top: 64px;
   padding-bottom: 16px;
@@ -506,7 +507,7 @@ body article footer {
   justify-content: center;
   align-items: center;
 }
-body article footer .footer {
+body footer .footer {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
@@ -514,10 +515,10 @@ body article footer .footer {
   justify-content: center;
   color: white;
 }
-body article footer .footer a {
+body footer .footer a {
   color: rgb(255, 255, 255);
 }
-body article footer .footer .footerLogo {
+body footer .footer .footerLogo {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -525,26 +526,27 @@ body article footer .footer .footerLogo {
   max-width: 230px;
   grid-area: 1/1/1/1;
 }
-body article footer .footer .footerLogo .logoWD {
+body footer .footer .footerLogo .logoWD {
   width: 40px;
   height: 40px;
 }
-body article footer .footer .footerLogo .upgradeText {
+body footer .footer .footerLogo .upgradeText {
   width: 112.5px;
+  height: 17.5px;
 }
-body article footer .footer .footerLinks {
+body footer .footer .footerLinks {
   max-width: 230px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   grid-area: 2/1/2/1;
 }
-body article footer .footer .footerLinks .contLinksItem {
+body footer .footer .footerLinks .contLinksItem {
   display: flex;
   align-items: center;
   gap: 33px;
 }
-body article footer .footer .footerLinks .contLinksItem .item {
+body footer .footer .footerLinks .contLinksItem .item {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -552,75 +554,75 @@ body article footer .footer .footerLinks .contLinksItem .item {
   font-size: 18px;
   line-height: 26px;
 }
-body article footer .footer .footerLinks .contLinksItem .item .imgArrow {
+body footer .footer .footerLinks .contLinksItem .item .imgArrow {
   width: 12px;
   height: 12px;
 }
-body article footer .footer .footerContactSocisal {
+body footer .footer .footerContactSocisal {
   display: flex;
   align-items: center;
   grid-area: 1/2/1/2;
   max-width: 320px;
   gap: 17px;
 }
-body article footer .footer .footerContactSocisal hr {
+body footer .footer .footerContactSocisal hr {
   height: 30px;
   width: 1px;
 }
-body article footer .footer .footerContactSocisal a img {
+body footer .footer .footerContactSocisal a img {
   width: 24px;
   height: 24px;
 }
-body article footer .footer .footerContactSocisal .number {
+body footer .footer .footerContactSocisal .number {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
 }
-body article footer .footer .footerContact {
+body footer .footer .footerContact {
   display: flex;
   flex-direction: column;
   max-width: 312px;
   grid-column: span 1;
   gap: 35px;
 }
-body article footer .footer .footerContact .email {
+body footer .footer .footerContact .email {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
 }
-body article footer .footer .footerContact address {
+body footer .footer .footerContact address {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
 }
-body article footer .footer .footerSocial {
+body footer .footer .footerSocial {
   display: flex;
   align-items: center;
   gap: 24px;
   grid-area: 1/3/1/3;
 }
-body article footer .footer .footerSocial a img {
+body footer .footer .footerSocial a img {
   width: 24px;
   height: 24px;
 }
-body article footer .footer .footerLegal {
+body footer .footer .footerLegal {
   display: flex;
   flex-direction: column;
   gap: 9px;
   grid-area: 2/3/2/3;
   max-width: 239px;
 }
-body article footer .footer .footerLegal p {
+body footer .footer .footerLegal p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
 }
-body article footer .footer .footerLegal a {
+body footer .footer .footerLegal a {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
 }
-body article footer .footerCredits {
+body footer .footerCredits {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -628,7 +630,7 @@ body article footer .footerCredits {
   max-width: 1024px;
   width: 100%;
 }
-body article footer .footerCredits hr {
+body footer .footerCredits hr {
   margin: 0px;
   margin-top: 88px;
   width: 100%;
@@ -636,12 +638,12 @@ body article footer .footerCredits hr {
   border: none;
   background-color: rgb(255, 255, 255);
 }
-body article footer .footerCredits .footerCreditsText {
+body footer .footerCredits .footerCreditsText {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-body article footer .footerCredits .footerCreditsText p {
+body footer .footerCredits .footerCreditsText p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -652,7 +654,7 @@ body article footer .footerCredits .footerCreditsText p {
   html {
     font-size: 14px;
   }
-  body article .header .navHeader {
+  body .header .navHeader {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -660,29 +662,29 @@ body article footer .footerCredits .footerCreditsText p {
     flex-wrap: wrap;
     transition: 1s ease;
   }
-  body article footer .footer {
-    column-gap: 100px;
+  body footer .footer {
+    column-gap: 80px;
   }
 }
 @media (max-width: 768px) {
   html {
     font-size: 12px;
   }
-  body article .header {
+  body .header {
     height: 5.3333rem;
   }
-  body article .header .navHeader {
+  body .header .navHeader {
     padding: 0rem 1.5rem;
     min-height: 5.3333rem;
   }
-  body article .header .navHeader .aLogo {
+  body .header .navHeader .aLogo {
     z-index: 1001;
   }
-  body article .header .navHeader .logo .logoImg {
+  body .header .navHeader .logo .logoImg {
     width: 3.3333rem;
     height: 3.3333rem;
   }
-  body article .header .navHeader .containerNavUl {
+  body .header .navHeader .containerNavUl {
     position: fixed;
     right: -100%;
     display: flex;
@@ -698,25 +700,25 @@ body article footer .footerCredits .footerCreditsText p {
     padding: 45px 30px;
     width: 60%;
   }
-  body article .header .navHeader .containerNavUl .itemNavUl a {
+  body .header .navHeader .containerNavUl .itemNavUl a {
     font-size: 24px;
   }
-  body article .header .navHeader .containerNavUl.open {
+  body .header .navHeader .containerNavUl.open {
     right: -50px;
   }
-  body article .header .navHeader .mobileContainerNavButton {
+  body .header .navHeader .mobileContainerNavButton {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 1.25rem;
     gap: 4.2rem;
   }
-  body article .header .navHeader .mobileContainerNavButton .navButton {
+  body .header .navHeader .mobileContainerNavButton .navButton {
     height: 3.3333rem;
     width: 7.25rem;
     font-size: 1.1667rem;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon {
+  body .header .navHeader .mobileContainerNavButton .burger-icon {
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
@@ -725,9 +727,9 @@ body article footer .footerCredits .footerCreditsText p {
     place-items: center;
     cursor: pointer;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span,
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span:after,
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
+  body .header .navHeader .mobileContainerNavButton .burger-icon span,
+  body .header .navHeader .mobileContainerNavButton .burger-icon span:after,
+  body .header .navHeader .mobileContainerNavButton .burger-icon span::before {
     transition-duration: 0.35s;
     content: "";
     width: 2.4rem;
@@ -737,160 +739,160 @@ body article footer .footerCredits .footerCreditsText p {
     cursor: pointer;
     background: transparent;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span:after {
+  body .header .navHeader .mobileContainerNavButton .burger-icon span:after {
     top: 1rem;
     background: rgb(23, 25, 28);
     opacity: 1;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
+  body .header .navHeader .mobileContainerNavButton .burger-icon span::before {
     opacity: 1;
     bottom: 1rem;
     z-index: 110;
     background: rgb(23, 25, 28);
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span {
+  body .header .navHeader .mobileContainerNavButton .burger-icon span {
     height: 0.2rem;
     background: rgb(23, 25, 28);
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon.active span:before {
+  body .header .navHeader .mobileContainerNavButton .burger-icon.active span:before {
     top: 0px;
     transform: rotate(45deg);
     transition: top 0.25s, transform 0.25s 0.25s;
     opacity: 0;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon.active {
+  body .header .navHeader .mobileContainerNavButton .burger-icon.active {
     transform: rotate(45deg);
     opacity: 1;
     transition: top 0.25s, transform 0.25s 0.25s;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon.active span:after {
+  body .header .navHeader .mobileContainerNavButton .burger-icon.active span:after {
     top: 0px;
     transform: rotate(-90deg);
     transition: top 0.25s, transform 0.25s 0.25s;
     opacity: 1;
   }
-  body article main .sectionStartIt {
+  body main .sectionStartIt {
     padding: 0rem;
     margin-bottom: 2.6667rem;
   }
-  body article main .sectionStartIt h1 {
+  body main .sectionStartIt h1 {
     font-size: 2.6rem;
   }
-  body article main .containerImg {
+  body main .containerImg {
     padding: 0rem;
     height: 37.3333rem;
     max-width: 60rem;
     width: 100%;
     margin-bottom: 2rem;
   }
-  body article main .containerImg .imgMain {
-    height: 448;
+  body main .containerImg .imgMain {
+    height: 37.3333rem;
     max-width: 60rem;
     width: 100%;
   }
-  body article main .articleText {
+  body main .articleText {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 2.5rem;
     padding: 0rem 2rem;
   }
-  body article main .articleText .tabSpanOff {
+  body main .articleText .tabSpanOff {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body article main ul,
-  body article main section {
+  body main ul,
+  body main section {
     padding: 0rem 2rem;
     margin-bottom: 4rem;
   }
-  body article main .ulH2 {
+  body main .ulH2 {
     padding-left: 24px;
     margin-bottom: 1.5rem;
   }
-  body article main ul {
+  body main ul {
     gap: 0.41rem;
   }
-  body article main ul li {
+  body main ul li {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body article main ul li::marker {
+  body main ul li::marker {
     font-size: 0.8333rem;
   }
-  body article main .Frontend {
+  body main .Frontend {
     padding-right: 2.5rem;
   }
-  body article main h2 {
+  body main h2 {
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.6667rem;
     margin-bottom: 2rem;
   }
-  body article main span {
+  body main span {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body article main p,
-  body article main a,
-  body article main section {
+  body main p,
+  body main a,
+  body main section {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body article main .webDisigneText {
+  body main .webDisigneText {
     margin-bottom: 4rem;
   }
-  body article main .webDisigneImg {
+  body main .webDisigneImg {
     max-width: 63rem;
     width: 100%;
     max-height: 37.8333rem;
   }
-  body article main .tableSection {
+  body main .tableSection {
     margin-bottom: 119.6256px;
   }
-  body article main .smile {
+  body main .smile {
     display: none;
   }
-  body article main .SEO {
+  body main .SEO {
     padding-right: 2.5rem;
   }
-  body article main .HR {
+  body main .HR {
     margin-bottom: 5.3333rem;
   }
-  body article main .preTableSection {
+  body main .preTableSection {
     margin-bottom: 5.3333rem;
   }
-  body article main .tableSection {
+  body main .tableSection {
     margin-bottom: 13.75rem;
   }
-  body article main .tableSection h2 {
+  body main .tableSection h2 {
     margin-bottom: 3.3333rem;
   }
-  body article main .tableSection table thead tr .thirdColum {
+  body main .tableSection table thead tr .thirdColum {
     width: 12.2083rem;
   }
-  body article main .tableSection table thead tr .fouColum {
+  body main .tableSection table thead tr .fouColum {
     width: 13.5rem;
   }
-  body article main .tableSection table thead tr th {
+  body main .tableSection table thead tr th {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body article main .tableSection table tbody {
+  body main .tableSection table tbody {
     height: 57.0833rem;
   }
-  body article main .other {
+  body main .other {
     width: 100%;
     margin-bottom: 3.5rem;
   }
-  body article main .other h2 {
+  body main .other h2 {
     padding-top: 5.6667rem;
     margin-bottom: 1.6667rem;
   }
-  body article main .other .otherCard {
+  body main .other .otherCard {
     position: relative;
     width: 100%;
     max-width: 50rem;
@@ -898,12 +900,12 @@ body article footer .footerCredits .footerCreditsText p {
     margin: auto;
     max-width: 100%;
   }
-  body article main .other .otherCard .slider .slide-animation {
+  body main .other .otherCard .slider .slide-animation {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider {
+  body main .other .otherCard .slider .slide-animation .row-slider {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -911,28 +913,28 @@ body article footer .footerCredits .footerCreditsText p {
     gap: 27.75px;
     width: 100%;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider .card {
+  body main .other .otherCard .slider .slide-animation .row-slider .card {
     min-width: 28.5rem;
     min-height: 25.1667rem;
     border-radius: 1.5rem;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
+  body main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
     width: 28.5rem;
     height: 16.6667rem;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider .card p {
+  body main .other .otherCard .slider .slide-animation .row-slider .card p {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2.1667rem;
   }
-  body article main .other .otherCard .dots {
+  body main .other .otherCard .dots {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 0.625rem;
     margin-bottom: 4.6667rem;
   }
-  body article main .other .otherCard .dots .dot {
+  body main .other .otherCard .dots .dot {
     display: inline-block;
     width: 0.625rem;
     height: 0.625rem;
@@ -941,36 +943,36 @@ body article footer .footerCredits .footerCreditsText p {
     border-radius: 0.3125rem;
     cursor: pointer;
   }
-  body article main .other .otherCard .dots .dot.active {
+  body main .other .otherCard .dots .dot.active {
     background-color: #007bff;
     width: 1.6667rem;
   }
-  body article main .subscrabe {
+  body main .subscrabe {
     margin-bottom: 3.6667rem;
     justify-content: space-between;
   }
-  body article main .subscrabe .containerForm input {
+  body main .subscrabe .containerForm input {
     width: 19.4167rem;
     height: 3.3333rem;
   }
-  body article main .subscrabe .containerForm button {
+  body main .subscrabe .containerForm button {
     width: 9.5rem;
     height: 3.3333rem;
   }
-  body article footer .footer {
+  body footer .footer {
     grid-template-columns: auto auto;
   }
-  body article footer .footer .footerSocial {
+  body footer .footer .footerSocial {
     grid-area: 3/1/3/1;
   }
-  body article footer .footer .footerContact {
+  body footer .footer .footerContact {
     gap: 16px;
     grid-area: 2/2/2/2;
   }
-  body article footer .footer .footerLegal {
+  body footer .footer .footerLegal {
     grid-area: 4/2/4/2;
   }
-  body article footer .footerCredits {
+  body footer .footerCredits {
     max-width: 721px;
   }
 }
@@ -978,10 +980,10 @@ body article footer .footerCredits .footerCreditsText p {
   html {
     font-size: 12px;
   }
-  body article main .subscrabe .containerForm input {
+  body main .subscrabe .containerForm input {
     width: 15rem;
   }
-  body article footer .footer {
+  body footer .footer {
     column-gap: 30px;
   }
 }
@@ -989,238 +991,238 @@ body article footer .footerCredits .footerCreditsText p {
   html {
     font-size: 8px;
   }
-  body article .header {
+  body .header {
     margin-bottom: 11rem;
     min-height: 8rem;
   }
-  body article .header .navHeader {
+  body .header .navHeader {
     min-height: 8rem;
     gap: 10rem;
   }
-  body article .header .navHeader .logo {
+  body .header .navHeader .logo {
     width: 20.625rem;
     height: 5rem;
     gap: 1.5625rem;
   }
-  body article .header .navHeader .logo .logoImg {
+  body .header .navHeader .logo .logoImg {
     width: 5rem;
     height: 5rem;
   }
-  body article .header .navHeader .mobileContainerNavButton .navButton {
+  body .header .navHeader .mobileContainerNavButton .navButton {
     display: none;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span {
+  body .header .navHeader .mobileContainerNavButton .burger-icon span {
     width: 3rem;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span::after {
+  body .header .navHeader .mobileContainerNavButton .burger-icon span::after {
     width: 3rem;
   }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
+  body .header .navHeader .mobileContainerNavButton .burger-icon span::before {
     width: 3rem;
   }
-  body article main .sectionStartIt {
+  body main .sectionStartIt {
     height: 20rem;
     margin-bottom: 4rem;
   }
-  body article main .sectionStartIt h1 {
+  body main .sectionStartIt h1 {
     font-size: 4rem;
     text-align: center;
     width: 500;
   }
-  body article main .containerImg {
+  body main .containerImg {
     height: 22.75rem;
     margin-bottom: 3rem;
     padding: 0 1.5rem;
   }
-  body article main .containerImg .imgMain {
+  body main .containerImg .imgMain {
     height: 22.75rem;
   }
-  body article main .articleText {
+  body main .articleText {
     margin-bottom: 6rem;
     font-size: 2rem;
     line-height: 3rem;
     padding: 0rem 2rem;
   }
-  body article main .articleText .tabSpanOff {
+  body main .articleText .tabSpanOff {
     font-size: 2rem;
     line-height: 3rem;
   }
-  body article main h2 {
+  body main h2 {
     font-size: 3rem;
     font-weight: 600;
     line-height: 4rem;
   }
-  body article main .ulH2 {
+  body main .ulH2 {
     padding-left: 17px;
     margin-bottom: 2.5rem;
   }
-  body article main ul {
+  body main ul {
     margin-bottom: 4.75rem;
     font-size: 2rem;
     line-height: 3rem;
     padding: 0rem 2rem;
     gap: 0.375rem;
   }
-  body article main ul li {
+  body main ul li {
     font-weight: 350;
     font-size: 2.375rem;
     line-height: 4rem;
   }
-  body article main ul li::marker {
+  body main ul li::marker {
     font-size: 1.25rem;
   }
-  body article main section {
+  body main section {
     font-weight: 300;
     font-size: 2rem;
     line-height: 3rem;
     padding: 0rem 2.125rem;
     margin-bottom: 6rem;
   }
-  body article main section h2 {
+  body main section h2 {
     margin-bottom: 3rem;
   }
-  body article main .MobileDev {
+  body main .MobileDev {
     padding: 0rem 2rem;
   }
-  body article main .margin-60,
-  body article main .HR {
+  body main .margin-60,
+  body main .HR {
     margin-bottom: 3rem;
   }
-  body article main .margin-88,
-  body article main .webDisigneText,
-  body article main .webDisigneImg {
+  body main .margin-88,
+  body main .webDisigneText,
+  body main .webDisigneImg {
     margin-bottom: 6rem;
   }
-  body article main .webDisigneImg {
+  body main .webDisigneImg {
     max-height: 22.75rem;
   }
-  body article main .UX {
+  body main .UX {
     padding-right: 4.25rem;
   }
-  body article main span {
+  body main span {
     font-weight: 500;
     font-size: 2rem;
     line-height: 3rem;
   }
-  body article main p,
-  body article main a {
+  body main p,
+  body main a {
     font-weight: 300;
     font-size: 2rem;
     line-height: 3rem;
   }
-  body article main .Frontend {
+  body main .Frontend {
     padding-right: 1.5rem;
   }
-  body article main .preTableSection {
+  body main .preTableSection {
     margin-bottom: 6rem;
   }
-  body article main .tableSection {
+  body main .tableSection {
     margin-bottom: 5.75rem;
     max-width: 40rem;
     width: 100%;
   }
-  body article main .tableSection table {
+  body main .tableSection table {
     max-width: 35rem;
     width: 100%;
     font-weight: 300;
     font-size: 1.75rem;
     line-height: 2.5rem;
   }
-  body article main .tableSection table .secondColum,
-  body article main .tableSection table .thirdColum,
-  body article main .tableSection table .fouColum {
+  body main .tableSection table .secondColum,
+  body main .tableSection table .thirdColum,
+  body main .tableSection table .fouColum {
     max-width: 8rem;
   }
-  body article main .tableSection table .oneColum,
-  body article main .tableSection table .secondColum,
-  body article main .tableSection table .thirdColum,
-  body article main .tableSection table .fouColum {
+  body main .tableSection table .oneColum,
+  body main .tableSection table .secondColum,
+  body main .tableSection table .thirdColum,
+  body main .tableSection table .fouColum {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body article main .smile {
+  body main .smile {
     display: flex;
     flex-wrap: wrap;
     padding: 3rem;
   }
-  body article main .other {
+  body main .other {
     margin-bottom: 8rem;
   }
-  body article main .other h2 {
+  body main .other h2 {
     font-size: 3rem;
   }
-  body article main .subscrabe {
+  body main .subscrabe {
     margin-bottom: 8rem;
     flex-direction: column;
   }
-  body article main .subscrabe .text-container {
+  body main .subscrabe .text-container {
     display: flex;
     flex-direction: column;
     gap: 0rem;
     align-items: start;
     padding-right: 5rem;
   }
-  body article main .subscrabe .containerForm {
+  body main .subscrabe .containerForm {
     flex-direction: column;
     align-items: start;
     gap: 2rem;
   }
-  body article main .subscrabe .containerForm input {
+  body main .subscrabe .containerForm input {
     width: 36rem;
     height: 5rem;
   }
-  body article main .subscrabe .containerForm input::placeholder {
+  body main .subscrabe .containerForm input::placeholder {
     font-size: 2.25rem;
     line-height: 3.25rem;
     font-weight: 300;
   }
-  body article main .subscrabe .containerForm button {
+  body main .subscrabe .containerForm button {
     width: 13.875rem;
     height: 5rem;
     font-size: 2rem;
     border-radius: 1rem;
   }
-  body article footer .footer {
+  body footer .footer {
     padding-left: 16px;
     padding-right: 16px;
     grid-template-columns: auto;
   }
-  body article footer .footer .footerLogo {
+  body footer .footer .footerLogo {
     grid-area: 1/1/1/1;
   }
-  body article footer .footer .footerLinks {
+  body footer .footer .footerLinks {
     grid-area: 2/1/2/1;
     margin-bottom: 46px;
   }
-  body article footer .footer .footerContactSocisal {
+  body footer .footer .footerContactSocisal {
     grid-area: 3/1/3/1;
     max-width: 200px;
     flex-wrap: wrap;
   }
-  body article footer .footer .footerContactSocisal hr {
+  body footer .footer .footerContactSocisal hr {
     display: none;
   }
-  body article footer .footer .footerSocial {
+  body footer .footer .footerSocial {
     grid-area: 5/1/5/1;
     margin-bottom: 46px;
   }
-  body article footer .footer .footerContact {
+  body footer .footer .footerContact {
     gap: 16px;
     grid-area: 4/1/4/1;
   }
-  body article footer .footer .footerLegal {
+  body footer .footer .footerLegal {
     grid-area: 6/1/6/1;
   }
-  body article footer .footerCredits {
+  body footer .footerCredits {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body article footer .footerCredits hr {
+  body footer .footerCredits hr {
     margin-top: 24px;
   }
-  body article footer .footerCredits .footerCreditsText {
+  body footer .footerCredits .footerCreditsText {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1231,30 +1233,30 @@ body article footer .footerCredits .footerCreditsText p {
   }
 }
 @media (max-width: 320px) {
-  body article main .other h2 {
+  body main .other h2 {
     font-size: 3rem;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider {
+  body main .other .otherCard .slider .slide-animation .row-slider {
     padding-left: 14px;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider .card {
+  body main .other .otherCard .slider .slide-animation .row-slider .card {
     min-width: 36rem;
     width: 100%;
     min-height: 31.75rem;
     border-radius: 2.25rem;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
+  body main .other .otherCard .slider .slide-animation .row-slider .card .cardImg {
     min-width: 36rem;
     width: 100%;
     height: 21.0263rem;
   }
-  body article main .other .otherCard .slider .slide-animation .row-slider .card p {
+  body main .other .otherCard .slider .slide-animation .row-slider .card p {
     font-weight: 500;
     font-size: 2.25rem;
     line-height: 3.25rem;
     color: rgb(23, 25, 28);
   }
-  body article main .other .otherCard .dots {
+  body main .other .otherCard .dots {
     margin-bottom: 8rem;
   }
 }
