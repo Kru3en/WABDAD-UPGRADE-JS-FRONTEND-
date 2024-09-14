@@ -49,11 +49,15 @@ a {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.875rem;
-  color: $blue400;
+  color: $blue500;
   text-decoration: none;
+  transition: 1s ease;
+}
+a:hover {
+  color: $blue400;
 }
 a:visited {
-  color: $blue400;
+  color: $blue500;
 }
 header {
   position: sticky;
@@ -186,6 +190,9 @@ body {
       max-width: 1024px;
       text-align: left;
       width: 100%;
+    }
+    a:hover {
+      color: $blue400;
     }
     ul {
       display: flex;
