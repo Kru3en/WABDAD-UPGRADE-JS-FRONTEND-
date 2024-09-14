@@ -486,136 +486,146 @@ body article main .subscrabe .containerForm button:hover {
   background-color: rgb(81, 157, 255);
 }
 body article footer {
+  background-color: rgb(32, 35, 40);
+  padding-top: 64px;
+  padding-bottom: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background: rgb(32, 35, 40);
+}
+body article footer .footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  column-gap: 130px;
+  justify-content: center;
+  color: white;
+}
+body article footer .footer a {
   color: rgb(255, 255, 255);
-  width: 100%;
 }
-body article footer .topContainer {
-  padding-top: 4.0625rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 7.3125rem;
-}
-body article footer .topContainer section:first-child {
-  display: flex;
-  gap: 1.125rem;
-  flex-direction: column;
-  width: 14.375rem;
-}
-body article footer .topContainer section:first-child .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-}
-body article footer .topContainer section:first-child .containerUl {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
-  font-size: 1.125rem;
-  line-height: 1.625rem;
-  height: 4.25rem;
-}
-body article footer .topContainer section:first-child .containerUl .rowUl {
-  display: flex;
-  gap: 32px;
-}
-body article footer .topContainer section:first-child .containerUl .rowUl .itemUl {
-  gap: 0.5313rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body article footer .topContainer section:first-child .tabFooter {
-  display: none;
-}
-body article footer .topContainer .tabContainer {
-  justify-content: space-between;
-  display: flex;
-  gap: 7.3125rem;
-}
-body article footer .topContainer .tabContainer section {
-  width: 19.5rem;
-}
-body article footer .topContainer .tabContainer section .icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-body article footer .topContainer .tabContainer section div {
+body article footer .footer .footerLogo {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 1.0625rem;
+  gap: 4px;
+  max-width: 230px;
+  grid-area: 1/1/1/1;
 }
-body article footer .topContainer .tabContainer section div hr {
-  width: 0.0625rem;
-  height: 1.875rem;
+body article footer .footer .footerLogo .logoWD {
+  width: 40px;
+  height: 40px;
 }
-body article footer .topContainer .tabContainer section .emailMy {
-  margin-top: 0.3375rem;
+body article footer .footer .footerLogo .upgradeText {
+  width: 112.5px;
 }
-body article footer .topContainer .tabContainer section .adressCont {
-  margin-top: 1rem;
-}
-body article footer .topContainer .tabContainer section .adressCont .adress {
-  font-size: 1rem;
-  width: 300;
-  line-height: 1.5rem;
-}
-body article footer .topContainer .tabContainer section:last-child {
-  width: 14.9375rem;
-}
-body article footer .topContainer .tabContainer section:last-child div {
-  display: flex;
-  gap: 1.5rem;
-}
-body article footer .topContainer .tabContainer section:last-child .registNumberCont {
-  margin-top: 1.95rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-}
-body article footer .topContainer .tabContainer section:last-child .legal {
-  margin-top: 0.6rem;
+body article footer .footer .footerLinks {
+  max-width: 230px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  font-size: 0.875rem;
+  gap: 16px;
+  grid-area: 2/1/2/1;
+}
+body article footer .footer .footerLinks .contLinksItem {
+  display: flex;
+  gap: 33px;
+}
+body article footer .footer .footerLinks .contLinksItem .item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+body article footer .footer .footerContactSocisal {
+  display: flex;
+  align-items: center;
+  grid-area: 1/2/1/2;
+  max-width: 320px;
+  gap: 17px;
+}
+body article footer .footer .footerContactSocisal hr {
+  height: 30px;
+  width: 1px;
+}
+body article footer .footer .footerContactSocisal a img {
+  width: 24px;
+  height: 24px;
+}
+body article footer .footer .footerContactSocisal .number {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+body article footer .footer .footerContact {
+  display: flex;
+  flex-direction: column;
+  max-width: 312px;
+  grid-column: span 1;
+  gap: 35px;
+}
+body article footer .footer .footerContact .email {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+body article footer .footer .footerContact address {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+body article footer .footer .footerSocial {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  grid-area: 1/3/1/3;
+}
+body article footer .footer .footerSocial a img {
+  width: 24px;
+  height: 24px;
+}
+body article footer .footer .footerLegal {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  grid-area: 2/3/2/3;
+  max-width: 239px;
+}
+body article footer .footer .footerLegal p {
   font-weight: 400;
-  line-height: 1.375rem;
+  font-size: 14px;
+  line-height: 22px;
 }
-body article footer .botContainer {
-  max-width: 64rem;
+body article footer .footer .footerLegal a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+body article footer .footerCredits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1024px;
   width: 100%;
 }
-body article footer .botContainer hr {
-  margin-top: 4.6rem;
-  margin-bottom: 1rem;
-  max-width: 64rem;
+body article footer .footerCredits hr {
+  margin: 0px;
+  margin-top: 88px;
   width: 100%;
+  height: 1px;
   border: none;
-  height: 0.0625rem;
   background-color: rgb(255, 255, 255);
 }
-body article footer .botContainer section {
+body article footer .footerCredits .footerCreditsText {
   display: flex;
   justify-content: space-between;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  width: 400;
+  width: 100%;
 }
-body article footer .botContainer section .footerSpan {
-  font-size: 0.875rem;
+body article footer .footerCredits .footerCreditsText p {
   font-weight: 400;
-  line-height: 1.375rem;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 1024px) {
@@ -630,17 +640,8 @@ body article footer .botContainer section .footerSpan {
     flex-wrap: wrap;
     transition: 1s ease;
   }
-  body article footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  body article footer .topContainer {
-    gap: 10%;
-  }
-  body article footer .topContainer .tabContainer {
-    gap: 10%;
+  body article footer .footer {
+    column-gap: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -719,11 +720,23 @@ body article footer .botContainer section .footerSpan {
   body article .header .navHeader .mobileContainerNavButton .burger-icon span:after {
     top: 1rem;
     background: rgb(23, 25, 28);
+    opacity: 1;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
+    opacity: 1;
+    bottom: 1rem;
+    z-index: 110;
+    background: rgb(23, 25, 28);
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon span {
+    height: 0.2rem;
+    background: rgb(23, 25, 28);
   }
   body article .header .navHeader .mobileContainerNavButton .burger-icon.active span:before {
     top: 0px;
     transform: rotate(45deg);
     transition: top 0.25s, transform 0.25s 0.25s;
+    opacity: 0;
   }
   body article .header .navHeader .mobileContainerNavButton .burger-icon.active {
     transform: rotate(45deg);
@@ -735,13 +748,6 @@ body article footer .botContainer section .footerSpan {
     transform: rotate(-90deg);
     transition: top 0.25s, transform 0.25s 0.25s;
     opacity: 1;
-  }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
-    opacity: 0;
-  }
-  body article .header .navHeader .mobileContainerNavButton .burger-icon span {
-    height: 0.2rem;
-    background: rgb(23, 25, 28);
   }
   body article main .sectionStartIt {
     padding: 0rem;
@@ -930,86 +936,21 @@ body article footer .botContainer section .footerSpan {
     width: 9.5rem;
     height: 3.3333rem;
   }
-  body article footer {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1.5rem;
+  body article footer .footer {
+    grid-template-columns: auto auto;
   }
-  body article footer .topContainer {
-    padding-top: 4rem;
-    justify-content: space-between;
-    width: 100%;
+  body article footer .footer .footerSocial {
+    grid-area: 3/1/3/1;
   }
-  body article footer .topContainer section:first-child {
-    gap: 1.5rem;
+  body article footer .footer .footerContact {
+    gap: 16px;
+    grid-area: 2/2/2/2;
   }
-  body article footer .topContainer section:first-child .containerUl {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 1.4rem;
+  body article footer .footer .footerLegal {
+    grid-area: 4/2/4/2;
   }
-  body article footer .topContainer section:first-child .containerUl .rowUl .itemUl {
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.1667rem;
-  }
-  body article footer .topContainer section:first-child .tabFooter {
-    margin-top: 2.0833rem;
-    display: flex;
-    gap: 1.5rem;
-  }
-  body article footer .topContainer .tabContainer {
-    flex-direction: column;
-    gap: 3.6875rem;
-    width: 28.5rem;
-  }
-  body article footer .topContainer .tabContainer section {
-    width: 100%;
-    gap: 1rem;
-  }
-  body article footer .topContainer .tabContainer section .freeIcon {
-    width: 100%;
-  }
-  body article footer .topContainer .tabContainer section .freeIcon div .icon {
-    width: 2rem;
-    height: 2rem;
-  }
-  body article footer .topContainer .tabContainer section .emailMy {
-    margin-top: 0rem;
-    font-size: 1.5rem;
-    line-height: 2.1667rem;
-    font-weight: 500;
-  }
-  body article footer .topContainer .tabContainer section .adressCont {
-    margin-top: 0rem;
-    width: 100%;
-  }
-  body article footer .topContainer .tabContainer section .adressCont .adress {
-    width: 100%;
-    font-weight: 300;
-    font-size: 1.3333rem;
-    line-height: 2rem;
-  }
-  body article footer .topContainer .tabContainer section:last-child {
-    width: 100%;
-  }
-  body article footer .topContainer .tabContainer section:last-child .desckFooter {
-    display: none;
-  }
-  body article footer .topContainer .tabContainer section:last-child .registNumberCont,
-  body article footer .topContainer .tabContainer section:last-child .legal {
-    width: 100%;
-    font-weight: 400;
-    font-size: 1.1667rem;
-    line-height: 1.8333rem;
-  }
-  body article footer .botContainer hr {
-    margin-top: 2rem;
-  }
-  body article footer .botContainer section p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.3333rem;
+  body article footer .footerCredits {
+    max-width: 721px;
   }
 }
 @media (max-width: 640px) {
@@ -1018,6 +959,9 @@ body article footer .botContainer section .footerSpan {
   }
   body article main .subscrabe .containerForm input {
     width: 15rem;
+  }
+  body article footer .footer {
+    column-gap: 30px;
   }
 }
 @media (max-width: 480px) {
@@ -1030,7 +974,7 @@ body article footer .botContainer section .footerSpan {
   }
   body article .header .navHeader {
     min-height: 8rem;
-    gap: 11.875rem;
+    gap: 10rem;
   }
   body article .header .navHeader .logo {
     width: 20.625rem;
@@ -1215,104 +1159,53 @@ body article footer .botContainer section .footerSpan {
     font-size: 2rem;
     border-radius: 1rem;
   }
-  body article footer {
-    padding: 0rem 2rem;
+  body article footer .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-template-columns: auto;
   }
-  body article footer .topContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
+  body article footer .footer .footerLogo {
+    grid-area: 1/1/1/1;
   }
-  body article footer .topContainer section:first-child .tabFooter {
+  body article footer .footer .footerLinks {
+    grid-area: 2/1/2/1;
+    margin-bottom: 46px;
+  }
+  body article footer .footer .footerContactSocisal {
+    grid-area: 3/1/3/1;
+    max-width: 200px;
+    flex-wrap: wrap;
+  }
+  body article footer .footer .footerContactSocisal hr {
     display: none;
   }
-  body article footer .topContainer section:first-child .containerUl {
-    gap: 2rem;
+  body article footer .footer .footerSocial {
+    grid-area: 5/1/5/1;
+    margin-bottom: 46px;
   }
-  body article footer .topContainer section:first-child .containerUl .rowUl {
-    display: flex;
-    gap: 4rem;
+  body article footer .footer .footerContact {
+    gap: 16px;
+    grid-area: 4/1/4/1;
   }
-  body article footer .topContainer section:first-child .containerUl .rowUl li {
-    font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 3.25rem;
+  body article footer .footer .footerLegal {
+    grid-area: 6/1/6/1;
   }
-  body article footer .topContainer .tabContainer {
-    gap: 2rem;
-  }
-  body article footer .topContainer .tabContainer .freeIcon {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  body article footer .topContainer .tabContainer .freeIcon div .icon {
-    width: 3rem;
-    height: 3rem;
-  }
-  body article footer .topContainer .tabContainer .freeIcon p {
-    font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 3.25rem;
-  }
-  body article footer .topContainer .tabContainer .freeIcon .freeIconHr {
-    display: none;
-  }
-  body article footer .topContainer .tabContainer .emailMy {
-    font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 3.25rem;
-  }
-  body article footer .topContainer .tabContainer section .adressCont .adress {
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-  body article footer .topContainer .tabContainer section:last-child {
-    width: 100%;
-  }
-  body article footer .topContainer .tabContainer section:last-child .desckFooter {
-    display: flex;
-  }
-  body article footer .topContainer .tabContainer section:last-child .desckFooter .icon {
-    width: 3rem;
-    height: 3rem;
-  }
-  body article footer .topContainer .tabContainer section:last-child .registNumberCont {
-    margin-top: 6rem;
-    width: 100%;
-  }
-  body article footer .topContainer .tabContainer section:last-child .registNumberCont p {
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  body article footer .topContainer .tabContainer section:last-child .legal p {
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  body article footer .botContainer {
-    font-weight: 300;
-    font-size: 1.75rem;
-    line-height: 2.75rem;
-  }
-  body article footer .botContainer section {
-    text-align: center;
+  body article footer .footerCredits {
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  body article footer .footerCredits hr {
+    margin-top: 24px;
+  }
+  body article footer .footerCredits .footerCreditsText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-  }
-  body article footer .botContainer section p {
-    font-weight: 300;
-    font-size: 1.75rem;
-    line-height: 2.75rem;
-  }
-  body article footer .botContainer section .footerSpan {
-    display: block;
-    font-weight: 300;
-    font-size: 1.75rem;
-    line-height: 2.75rem;
+    gap: 8px;
+    max-width: 250px;
+    text-align: center;
   }
 }
 @media (max-width: 320px) {
