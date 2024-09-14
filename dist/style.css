@@ -113,6 +113,10 @@ button {
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-weight: 700;
   font-size: 3rem;
@@ -142,6 +146,12 @@ a {
 
 a:visited {
   color: rgb(81, 157, 255);
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
 }
 
 body {
@@ -206,6 +216,15 @@ body article .header .navHeader .containerNavUl .itemNavUl {
   justify-content: center;
   align-items: center;
 }
+body article .header .navHeader .containerNavUl .itemNavUl a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(23, 25, 28);
+}
+body article .header .navHeader .containerNavUl .itemNavUl a:hover {
+  color: rgb(81, 157, 255);
+}
 body article .header .navHeader .navButton {
   display: grid;
   place-items: center;
@@ -218,6 +237,7 @@ body article .header .navHeader .navButton {
   font-size: 1.125rem;
   width: 300;
   line-height: 1.625rem;
+  cursor: pointer;
 }
 body article .header .navHeader .navButton:hover {
   background-color: rgb(81, 157, 255);
@@ -634,6 +654,9 @@ body article footer .botContainer section .footerSpan {
     padding: 0rem 1.5rem;
     min-height: 5.3333rem;
   }
+  body article .header .navHeader .aLogo {
+    z-index: 1001;
+  }
   body article .header .navHeader .logo .logoImg {
     width: 3.3333rem;
     height: 3.3333rem;
@@ -641,6 +664,24 @@ body article footer .botContainer section .footerSpan {
   body article .header .navHeader .containerNavUl {
     position: fixed;
     right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background-color: aliceblue;
+    max-width: 100%;
+    transition: 1s ease;
+    border-radius: 0px 0px 0px 16px;
+    top: 0px;
+    gap: 50px;
+    padding: 45px 30px;
+    width: 60%;
+  }
+  body article .header .navHeader .containerNavUl .itemNavUl a {
+    font-size: 24px;
+  }
+  body article .header .navHeader .containerNavUl.open {
+    right: -50px;
   }
   body article .header .navHeader .mobileContainerNavButton {
     display: flex;
@@ -679,9 +720,24 @@ body article footer .botContainer section .footerSpan {
     top: 1rem;
     background: rgb(23, 25, 28);
   }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon.active span:before {
+    top: 0px;
+    transform: rotate(45deg);
+    transition: top 0.25s, transform 0.25s 0.25s;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon.active {
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: top 0.25s, transform 0.25s 0.25s;
+  }
+  body article .header .navHeader .mobileContainerNavButton .burger-icon.active span:after {
+    top: 0px;
+    transform: rotate(-90deg);
+    transition: top 0.25s, transform 0.25s 0.25s;
+    opacity: 1;
+  }
   body article .header .navHeader .mobileContainerNavButton .burger-icon span::before {
-    bottom: 1rem;
-    background: rgb(23, 25, 28);
+    opacity: 0;
   }
   body article .header .navHeader .mobileContainerNavButton .burger-icon span {
     height: 0.2rem;

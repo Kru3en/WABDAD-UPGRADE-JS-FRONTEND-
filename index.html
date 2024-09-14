@@ -34,21 +34,33 @@
     <article>
       <header class="header">
         <nav class="navHeader">
-          <div class="logo">
-            <img src="./assets/img/logo.png" alt="logo" class="logoImg" />
-            <img src="./assets/img/logoText.svg" alt="logo" class="logoText" />
-          </div>
+          <a href="https://upgrade.webdad.by/" class="aLogo">
+            <div class="logo">
+              <img src="./assets/img/logo.png" alt="logo" class="logoImg" />
+              <img
+                src="./assets/img/logoText.svg"
+                alt="logo"
+                class="logoText"
+              />
+            </div>
+          </a>
           <ul class="containerNavUl">
             <li class="itemNavUl">
-              Программы
+              <a href="https://upgrade.webdad.by/programs">Программы</a>
               <img src="./assets/img/arrowBottom.svg" class="imgNavArrow" />
             </li>
-            <li class="itemNavUl">Навыки</li>
-            <li class="itemNavUl">Блог</li>
-            <li class="itemNavUl">Лаборотория</li>
+            <li class="itemNavUl">
+              <a href="https://upgrade.webdad.by/skills">Навыки</a>
+            </li>
+            <li class="itemNavUl">
+              <a href="https://upgrade.webdad.by/blog">Блог</a>
+            </li>
+            <li class="itemNavUl">
+              <a href="https://upgrade.webdad.by/laboratory">Лаборотория</a>
+            </li>
           </ul>
           <div class="mobileContainerNavButton">
-            <button class="navButton">Начать</button>
+            <a href="#sendEmail"><button class="navButton">Начать</button></a>
             <div class="burger-icon">
               <span></span>
             </div>
@@ -493,7 +505,7 @@
                 </div>
               </div>
             </div>
-            <div class="dots">
+            <div class="dots" id="sendEmail">
               <span class="dot active"></span>
               <span class="dot"></span>
               <span class="dot"></span>
@@ -630,6 +642,7 @@
     <script src="./slider.js"></script>
     <script src="./smile.js"></script>
     <script src="./sendEmail.js"></script>
+    <script src="./burger.js"></script>
     <script src="dist/bundle.js"></script>
   </body>
 </html>

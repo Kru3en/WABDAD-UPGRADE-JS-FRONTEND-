@@ -28,7 +28,9 @@ $blue500: rgba(24, 116, 255, 1);
   font-size: 1.125rem;
   line-height: 1.875rem;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   font-weight: 700;
   font-size: 3rem;
@@ -52,6 +54,11 @@ a {
 }
 a:visited {
   color: $blue400;
+}
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
 }
 body {
   font-family: 'Rubik', sans-serif;
@@ -104,7 +111,15 @@ body {
           gap: 1.75rem;
           .itemNavUl {
             @include center-flex;
-
+            a {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: rgba(23, 25, 28, 1);
+            }
+            a:hover {
+              color: $blue400;
+            }
             .imgNavArrow {
             }
           }
@@ -121,6 +136,7 @@ body {
           font-size: 1.125rem;
           width: 300;
           line-height: 1.625rem;
+          cursor: pointer;
         }
         .navButton:hover {
           background-color: $blue400;
@@ -551,6 +567,9 @@ $arrow-color: white;
         .navHeader {
           padding: 0rem 1.5rem;
           min-height: 5.3333rem;
+          .aLogo {
+            z-index: 1001;
+          }
           .logo {
             .logoImg {
               width: 3.3333rem;
@@ -560,6 +579,26 @@ $arrow-color: white;
           .containerNavUl {
             position: fixed;
             right: -100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            background-color: aliceblue;
+            max-width: 100%;
+            transition: 1s ease;
+            border-radius: 0px 0px 0px 16px;
+            top: 0px;
+            gap: 50px;
+            padding: 45px 30px;
+            width: 60%;
+            .itemNavUl {
+              a {
+                font-size: 24px;
+              }
+            }
+          }
+          .containerNavUl.open {
+            right: -50px;
           }
           .mobileContainerNavButton {
             @include center-flex;
@@ -598,10 +637,30 @@ $arrow-color: white;
               top: 1rem;
               background: rgba(23, 25, 28, 1);
             }
-
+            .burger-icon.active span:before {
+              top: 0px;
+              transform: rotate(45deg);
+              transition:
+                top 0.25s,
+                transform 0.25s 0.25s;
+            }
+            .burger-icon.active {
+              transform: rotate(45deg);
+              opacity: 1;
+              transition:
+                top 0.25s,
+                transform 0.25s 0.25s;
+            }
+            .burger-icon.active span:after {
+              top: 0px;
+              transform: rotate(-90deg);
+              transition:
+                top 0.25s,
+                transform 0.25s 0.25s;
+              opacity: 1;
+            }
             .burger-icon span::before {
-              bottom: 1rem;
-              background: rgba(23, 25, 28, 1);
+              opacity: 0;
             }
             .burger-icon span {
               height: 0.2rem;
