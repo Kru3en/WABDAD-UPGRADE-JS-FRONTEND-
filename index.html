@@ -12,9 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="stylesheet" href="./dist/style.css" />
 
@@ -47,7 +56,11 @@
           <ul class="containerNavUl">
             <li class="itemNavUl">
               <a href="https://upgrade.webdad.by/programs">Программы</a>
-              <img src="./assets/img/arrowBottom.svg" class="imgNavArrow" />
+              <img
+                src="./assets/img/arrowBottom.svg"
+                class="imgNavArrow"
+                alt="arrow"
+              />
             </li>
             <li class="itemNavUl">
               <a href="https://upgrade.webdad.by/skills">Навыки</a>
@@ -73,7 +86,10 @@
           <h1>Кем стать в ИТ сфере?</h1>
         </section>
         <div class="containerImg">
-          <img src="./assets/img/header.png" alt="header" class="imgMain" />
+          <picture>
+            <source srcset="assets/img/header.webp" type="image/webp" />
+            <img src="assets/img/header.png" alt="header" class="imgMain" />
+          </picture>
         </div>
         <article class="articleText">
           Вы определились с выбором своей профессии и уже твердо для себя
@@ -89,8 +105,8 @@
           в будущем. И какое направление подойдет именно Вам исходя из Ваших
           интересов.
         </article>
+        <h2 class="ulH2">Содержание статьи</h2>
         <ul>
-          <h2>Содержание статьи</h2>
           <li>Web-разработчик</li>
           <li>Frontend-разработчик</li>
           <li>Backend-разработчик</li>
@@ -270,11 +286,15 @@
             .
           </p>
         </section>
-        <img
-          src="./assets/img/webDisigne.png"
-          alt="webDisigne"
-          class="webDisigneImg"
-        />
+
+        <picture>
+          <source srcset="assets/img/webDisigne.webp" type="image/webp" />
+          <img
+            src="assets/img/webDisigne.png"
+            alt="webDisigne"
+            class="webDisigneImg"
+          />
+        </picture>
         <section class="UX">
           <h2>UX/UI-дизайнер</h2>
           <p>
@@ -471,11 +491,18 @@
                     class="card"
                     target="_blank"
                   >
-                    <img
-                      src="./assets/img/card1.png"
-                      alt="card1"
-                      class="cardImg"
-                    />
+                    <picture>
+                      <source
+                        srcset="assets/img/card1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/img/card1.png"
+                        alt="card1"
+                        class="cardImg"
+                      />
+                    </picture>
+
                     <p>Как найти работу в ИТ — план действий</p>
                   </a>
                   <a
@@ -483,11 +510,17 @@
                     class="card"
                     target="_blank"
                   >
-                    <img
-                      src="./assets/img/card2.png"
-                      alt="card2"
-                      class="cardImg"
-                    />
+                    <picture>
+                      <source
+                        srcset="assets/img/card2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/img/card2.png"
+                        alt="card2"
+                        class="cardImg"
+                      />
+                    </picture>
                     <p>Какие навыки нужны программисту?</p>
                   </a>
                   <a
@@ -495,11 +528,17 @@
                     class="card"
                     target="_blank"
                   >
-                    <img
-                      src="./assets/img/card3.png"
-                      alt="card3"
-                      class="cardImg"
-                    />
+                    <picture>
+                      <source
+                        srcset="assets/img/card3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/img/card3.png"
+                        alt="card3"
+                        class="cardImg"
+                      />
+                    </picture>
                     <p>Краткий обзор языков программирования</p>
                   </a>
                 </div>
@@ -547,6 +586,7 @@
                 <img
                   src="./assets/img/footer/arrowBottomWhite.svg"
                   class="imgArrow"
+                  alt="arrow"
                 />
               </a>
               <a href="https://upgrade.webdad.by/skills" class="item">Навыки</a>
